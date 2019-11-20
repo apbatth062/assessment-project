@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.navbar{
+  background-color: #343a40;
+}
+.navbar .name{
+  color: #fff;
+}
+.navbar form input{
+  height: 32px;
+  border-radius: 25px;
+  width: 300px;
+  outline: none;
+  padding-left: 10px;
+}
+.navbar form input:focus{
+  border-color: yellow;
+}
+
+  @media(max-width:768px){
+    .navbar{
+      height: 110px !important;
+    }
+    .navbar .Name{
+      position: absolute;
+      top: 10px;
+      white-space: nowrap;
+    }
+    .navbar .form-group{
+      position: absolute;
+      left: 10px;
+      top: 60px;
+      width: 100%;
+    }
+  }
+  @media(max-width:600px){
+    .navbar{
+      height: 140px !important;
+    }
+    .navbar form input{
+      width: 200px ;
+    }
+  }
+  @media(max-width:400px){
+    .navbar{
+      height: 200px !important;
+    }
+    .navbar form button{
+      margin-top: 5px;
+    }
+  }
+
+.footer {
+  width: 100%;
+  background-color: #343a40;
+  height: 50px;
+  color: white;
+  text-align: center;
+}
+.footer p{
+  font-family: cursive;
+  padding-top: 10px;
+}
+
+.footer p a{
+  text-decoration: none;
+}
+.footer p a:hover{
+  color: #DC3545;
+  font-weight: bold;
+}
