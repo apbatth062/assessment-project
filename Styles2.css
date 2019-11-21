@@ -72,3 +72,7 @@
   color: #DC3545;
   font-weight: bold;
 }
+.footer2{
+  position: absolute;
+  bottom: 0;
+}
