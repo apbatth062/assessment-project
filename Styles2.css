@@ -73,6 +73,6 @@
   font-weight: bold;
 }
 .footer2{
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }

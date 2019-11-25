@@ -41,9 +41,9 @@
                 <div class="card-body">
                     <h4 class="card-title">Detail: <span id="details"> </span></h4>
                     <p class="card-text">Description <span id="description"></span> </p>
-                    <h3>Temp : <span id="temp"> </span> °C </h3>
-                    <h4 class="card-title">Pressure: <span id="Pressure"> </span> Mb</h4>
-                    <h4 class="card-title">Humidity: <span id="Humidity"> </span> %</h4>
+                    <h3>Temp : <span id="temp"> </span> </h3>
+                    <h4 class="card-title">Pressure: <span id="Pressure"> </span> </h4>
+                    <h4 class="card-title">Humidity: <span id="Humidity"> </span> </h4>
                 </div>
               
             </div> 
@@ -69,9 +69,9 @@
         function (data, status) {
            $('#description').text(data.weather[0].description);
            $('#details').text(data.weather[0].main);
-           $('#temp').text(Math.round(data.main.temp-273));
-           $('#Pressure').text(data.main.pressure);
-           $('#Humidity').text(data.main.humidity);
+             $('#temp').text(Math.round(data.main.temp-273)+' °C');
+           $('#Pressure').text((data.main.pressure)+'Mb');
+           $('#Humidity').text((data.main.humidity) +'%');;
 
 
         });
